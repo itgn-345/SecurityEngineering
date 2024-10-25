@@ -21,12 +21,14 @@ Actors in the Supply Chain and Concerns:
 While UBA can flag suspicious activity, it requires careful tuning to avoid false positives, which could lead to unnecessary investigations. ABC will also need to address privacy concerns to prevent employee distrust.
 2.	Company C (Contractual Coders): Contractual coders from Company C represent a significant risk, as they may not be as loyal or trustworthy as in-house employees. To secure the code being developed by these external contributors, Endpoint Detection and Response (EDR) should be deployed. EDR solutions continuously monitor endpoints, detect unusual activities, and respond to potential threats in real-time. ABC can ensure that all external coders use secured environments monitored by EDR, which will allow them to detect any malware insertion, backdoors, or unauthorized data access.
 Managing and deploying EDR for contractual coders might require setting up isolated virtual environments. ABC must also ensure compliance from Company C to use approved tools and processes, which may add complexity to contracts and collaboration processes.
- 
+ <img width="741" alt="Screenshot 2024-10-25 at 2 23 25 PM" src="https://github.com/user-attachments/assets/2bb1d6e4-f16f-4471-a077-53b4c14dd721">
+
 
 3.	Company D (Audit): Company D audits the software produced by ABC. Since auditors need access to the codebase, they could unknowingly introduce vulnerabilities or act maliciously. To mitigate this, ABC can use Trusted Platform Modules (TPMs) to verify the integrity of the software and ensure that any changes made by auditors are legitimate. TPMs store cryptographic keys securely and can verify whether the software has been tampered with. ABC should require Company D to follow strict protocols for accessing and auditing the codebase, with TPMs providing a final verification check before the product is shipped.
 TPMs may introduce additional delays, as the cryptographic verification process takes time. Additionally, TPMs need to be integrated into the development and audit environments, which could require extra technical resources.
 4.	Company E (Hosting Internal Tools): Company E hosts internal tools for ABC. Hosting platforms represent a critical point of vulnerability, as they could be exploited through compromised tools or data leaks. Implementing Network Detection and Response (NDR) will help ABC monitor and detect any unusual network activity between ABC and Company E’s hosted services. NDR solutions can identify and block malicious traffic, such as external access attempts or lateral movement within ABC’s infrastructure. NDR systems require continuous monitoring and adjustment to be effective, and they generate large volumes of data. ABC will need dedicated resources to analyze this data and respond to potential incidents quickly.
- 
+ <img width="660" alt="Screenshot 2024-10-25 at 2 22 38 PM" src="https://github.com/user-attachments/assets/2fb59d45-0c2d-497d-ae92-7524a7282041">
+
 
 References:
 https://pentest-tools.com/blog/supply-chain-attack
