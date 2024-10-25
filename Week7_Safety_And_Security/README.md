@@ -1,100 +1,102 @@
-# Week 7
+Task 1: Safety Concerns
 
-### Grading
+1.1Why are new safety concerns sometimes overlooked?
+Because of government apathy and a lack of motivation for active safety measures, recent safety problems in the automotive and healthcare industries sometimes go unreported. Compared to the automotive business, where safety is essential for gaining customers' trust and adhering to regulations, the medical area may offer less compensation for addressing safety concerns. Hospitals may have a culture where fresh hazards are not sufficiently addressed until they cause serious harm because safety concerns are not prioritised.
 
-Task #|Points|Description|
------|:---:|----------|
-[Task 1](#task-1-safety-concerns) | 1 | Safety Concerns
-[Task 2](#task-2-static-and-dynamic-analyzers) | 1 | Static and Dynamic Analysers 
-[Task 3](#task-3-security-certification) | 1 | Security Certifications
-[Task 4](#task-4-tietoturvamerkki) | 1 | Tietoturvamerkki
-[Task 5](#task-5-showcase) | 1 | Showcase
+1.2 What are events that trigger sudden change?
+Rapid changes are frequently the result of significant catastrophes or noteworthy failures that attract public and regulatory attention. For example, when a major vehicle accident occurs because of a safety flaw, it can lead to widespread media attention and public indignation, forcing automakers to review their safety procedures. Similarly, a significant defect in medical supplies that causes harm to patients may lead to inquiries and stricter rules. Improving safety procedures requires an understanding of the background of these accidents. These kinds of incidents frequently spark changes in industry norms, resulting in more stringent safety laws and a renewed emphasis on risk management techniques.
 
-(4 points max)
+Task 2: Static and Dynamic Analyzers
+To find mistakes and guarantee code uniformity, software testing uses two different approaches: both static and dynamic analysis. Without running the code, static analyzers examine it. They carefully examine the original software or bytecode to find errors, infractions of coding standards, and security flaws. This group includes programs such as Coverity and Clang Analyzer. The primary benefit of static analysis is its ability to reveal errors early in the development phase, allowing programmers to remedy them before the program runs. Fixing flaws later in the building process can be far less expensive and time-consuming with this proactive approach.
+Dynamic analyzers, on the contrary, assess the application while it is running. They keep an eye on the software's efficiency in real time, spotting problems like memory violations, buffer overflows, and execution errors. Address Sanitizer is an illustration of dynamic analysis. Dynamic analysis's primary advantage is its capacity to identify issues that only surface during execution, offering important information about the behavior and performance of the application during runtime.
 
----
+Example
+In order to detect memory safety problems in C and C++ systems, Address Sanitizer is a potent assessment tool. It functions by examining the source code throughout the build phase and adding checks that keep an eye on memory accesses. Address Sanitiser identifies use-after-free problems and unauthorized accesses while the program is operating and provides thorough reports on any infractions. Because of its exceptional ability to detect hidden problems that may result in security vulnerabilities, this tool is a crucial component of the testing toolset for developers who utilize low-level memory languages.
 
-# Tasks
+Task 3: Security Certification
 
-### Task 1: Safety Concerns
+3.1 Potential End User/Buyer of the Product
+Good Incentives:
+•	By ensuring that a product satisfies security standards, security certification safeguards important data and systems. Because people feel more secure in their decisions, certified products may be more widely accepted as a result of this assurance.
+•	Regulatory Compliance: Organisations must utilise certified goods to meet industry rules, leading to increased demand and improved security.
+Bad Incentives:
+•	Consumers may have the misconception that certified products are completely safe, which might give them an illusion of protection and cause them to neglect using their own safety precautions. Users may neglect extra security measures as a result of this false notion, which can lead to inadequate risk management.
+•	Higher prices for certified items may discourage budget-conscious purchasers, regardless of the benefits over time outweigh the initial expenses.
 
-In terms of medical equipment and automotive industry mentioned in the Lecture 13, consider the following: 
+3.2 Certifying Authority (Both Vendor Funded and Non-Profit)
+Good Incentives:
+The goal of nonprofit certification bodies is to establish a reputation for integrity and dependability. Obtaining successful certifications improves their credibility and market reputation, which benefits both producers and consumers. By guaranteeing product safety and promoting a positive market environment, these certifying organizations work to protect consumers. For non-profits that put society's interests first, this is especially crucial.
+Bad Incentives:
+Issues with Vendor-Funded Certification: If a certifying body depends on vendor funding, it can feel pressured to approve items in order to keep revenue, which could jeopardize the process's integrity. This could result in a deficiency of comprehensive assessments. Regulatory Concerns: It is feared that certifying bodies, particularly those supported by vendors, can become overly sympathetic to corporate interests, resulting in lax rules that fall short of providing sufficient protection for consumers.
 
-- Why are new safety concerns sometimes overlooked? 
-- What are events that trigger sudden change? 
+3.3 Manufacturer/Designer of the Product
+Good Incentives:
+•	In an overcrowded industry, certification can be a powerful marketing tool that helps producers stand out from the competition. It improves the brand's image and can lead to greater sales since customers prefer certified items.
+•	Specific industries or clients may require certified items, creating new commercial prospects for producers. This is especially important in areas with stringent compliance standards.
+Bad Incentives:
+•	Getting certification may be costly and time-consuming, prompting producers to cut shortcuts or expedite the procedure, possibly jeopardising product security.
+•	Certain producers might participate in "security washing," which is when they overestimate the safety advantages associated with their goods without enough backing from the procedure for certification, thereby deceiving consumers.
 
-250 words **maximum**, cite if you use external sources 
+Task 4: NIS2 & RED
 
-[Security Engineering Lecture 13: Safety and Security](https://www.youtube.com/watch?v=uZkQtnHKcJ4) 
+4.1	Concisely explain the main goal of the directive?
+The NIS2 Directive aims to improve cybersecurity within networks and data applications across the European Union by harmonising resiliency rules, enforcing obligations on key entities, and establishing a framework to facilitate global cybersecurity collaboration.
 
----
+4.2 Which types of products does it concern?
+NIS2 is concerned with internet service providers like internet search engines and servers in the cloud, along with key sector institutions notably as transportation, healthcare, and finance.
 
-### Task 2: Static and Dynamic Analyzers
+4.3 Which types of organizations does it concern?
+The NIS2 Regulation applies to operators of vital services in financial markets, technological infrastructures, and health. It also applies to digital service companies that supply critical services.
 
-Explain the difference between static and dynamic analyzers. Explain what the advantages are of using these tools during production.  Pick one of the Static or Dynamic testing methods mentioned in the Lecture 14 and write a brief description of it. 
+4.4	What kind of cybersecurity measures have to be implemented for a product/organization to comply with the directive?
+To control network and data system risks and maintain a high degree of security, organisations must employ suitable security measures. This covers things like risk evaluations, reporting of incidents, management of supply chain risks, business- continuity planning, and regular testing for security.
 
-300 words **maximum**, cite if you use external sources 
+4.5 When (Date) do organizations/products need to comply with the directive?
+EU members must implement the NIS2 Regulation as national legislation by October 17, 2024.
 
-[Security Engineering Lecture 14: Assurance and Sustainability](https://www.youtube.com/watch?v=cmWQF2FDlG8) 
+4.5	What are possible penalties?
+Non-compliance with NIS2 can result in fines up to EUR10,000,000 or 2% of a company's global revenue. For non-essential enterprises, the administrative penalty cost can be up to EUR 7,000,000 or 1.4% of the preceding financial year's worldwide annual turnover, whichever is greater.
 
----
+4.5 Your own thoughts: How does this benefit you/society overall. Are there positive and negative aspects?
+NIS2 improves the security and durability of vital facilities and digital services, safeguarding people's data and assuring crucial services continuation. However, executing these new criteria may be difficult for certain organisations, especially smaller and medium-sized enterprises, necessitating large expenditures in cybersecurity measures. In general, the advantages of NIS2 exceed the expenses, since it will help to create a more secure and private online environment for everyone.
 
-### Task 3: Security Certification
-
-Consider the different incentives (both 'Good' and 'Bad' incentives) for Security Certification of a product from the following points of view:
-
-- Potential End User/Buyer of the product 
-- Certifying authority (both vendor funded and non-profit) 
-- Manufacturer/designer of the product 
-
-400 words **maximum**, cite if you use external sources 
-
-**(EXPLANATIONS)**
-
-- Vendor funded = Applicant pays the certifying authority for the certification process 
-- Non-profit = Applicant does not have to pay directly for the certification process 
-
-
-[Security Engineering Lecture 15: Governance and Regulation](https://www.youtube.com/watch?v=PdMzMHizEaE) 
-[Security Engineering Lecture 16: Ian Levy, NCSC - Protecting a country for fun and profit](https://www.youtube.com/watch?v=qv6SS5FhdUk) 
-
----
-
-### Task 4: Tietoturvamerkki
-
-You might be familiar with CE-Certification regarding electrical equipment and products. Although it is not a guarantee of safety, you can feel a certain amount of confidence towards the product. Could something similar be possible for Cybersecurity? 
-
-Take a look at Tietoturvamerkki and write an essay answering the following questions: 
-
-- What is Tietoturvamerkki 
-- What kind of products does it concern 
-- How does a product get a Tietoturvamekki certificate 
-- What does the certificate guarantee about the product and what it does not 
-- Include your own thoughts about this style of certificate. Would you pay more for a certified product? Do you see any problems regarding the certificate? 
-
-400 words **maximum**. 
- 
-
-FI: https://tietoturvamerkki.fi/fi/tietoturvamerkki-etusivu 
-
-EN: https://tietoturvamerkki.fi/en/cybersecurity-label 
+Task 5: Showcase
 
 
----
+•	Name of the tool
+Wazuh
 
-### Task 5: Showcase
+•	Link to the tool website/repository
+https://wazuh.com/
 
-Choose a Cybersecurity tool of your choice and answer the following questions about it.
+•	Free or Paid tool?
+Yes, it’s free, but if we need a cloud-based solution, that comes with the price. 
 
-Pick a new tool that has not been featured in the course, so the following are forbidden from this task: (Nmap/Zenmap, Wazuh, thc-hydra, BurpSuite, Trivy, Hadolint, Falco)
+•	When was the tool created and by who?
+Santiago Bassett, who is the founder and CEO of Wazuh created it in 2015.
 
-- Name of the tool
-- Link to the tool website/repository
-- Free or Paid tool?
-- When was the tool created and by who?
-- Is the tool Open Source?
-- What is the tool used for?
-- What are its capabilities?
-- Who would most benefit from this tool?
-- What kind of use case could you yourself have for this tool?
+•	Is the tool Open Source?
+Yes, it is open source and can easily be downloaded. 
 
+•	What is the tool used for?
+It is a SIEM solution that helps organisations to monitor the logs to detect any incident.
+
+•	What are its capabilities?
+Log monitoring
+File integrity monitoring  
+Maintain system inventory
+Malware detection
+Security Configuration Assessment
+Active response 
+Log data collection
+Vulnerability detection
+Container Security
+
+•	Who would most benefit from this tool?
+Government, Fintech, IT, Healthcare and other product-based companies.
+
+•	What kind of use case could you yourself have for this tool?
+I can use it for log monitoring and analysis, intrusion detection and security compliance. 
+
+Reference:
+https://documentation.wazuh.com/current/getting-started/index.html
